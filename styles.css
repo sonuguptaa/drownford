@@ -44,7 +44,40 @@ section {
     height: auto;
 }
 
-/* Your existing styles */
+#banner-section {
+    position: relative;
+}
+
+#banner-section img {
+    width: 100%;
+    height: auto;
+    animation: fadeInOut 0.5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#prev-btn, #next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
 /* Your existing styles */
 
 #product-list {
@@ -79,9 +112,6 @@ section {
     height: auto;
     margin-bottom: 10px; /* Add some space between image and text */
 }
-.product {
-    /* Your existing styles for the product container */
-}
 
 .price {
     color: green; /* Set the color of the price text */
@@ -111,7 +141,6 @@ footer a {
     color: #000000;
     text-decoration: none;
 }
-
 
 /* Your existing styles */
 
